@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=OpenSans&display=swap" rel="stylesheet">
     <title>Javascript</title>
 
     <style>
@@ -199,6 +200,102 @@
         .course-drop {
             padding-bottom: 40px;
         }
+        .testimonials-container {
+    margin: 20px auto;
+    max-width: 768px;
+    padding: 20px 60px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.testimonial {
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+color: #333333;
+}
+
+.subtop {
+font-family: Nunito;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 31px;
+text-align: center;
+letter-spacing: 0.655606px;
+color: #2A2B2A;
+}
+
+.itemposition {
+    display: flex;
+}
+
+.stuimg {
+border-radius: 50%;
+object-fit: cover;
+}
+
+.user-details {
+    margin-left: 10px;;
+}
+
+.username {
+margin: 0;
+font-family: Nunito;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 124.8%;
+letter-spacing: 0.655606px;
+padding: 0 9px;
+color: #474747;
+}
+
+.checked {
+padding: 8px;
+font-size: 20px;
+color: #FAF35E;
+}
+
+.action {
+margin: 0;
+font-family: Open Sans;
+font-style: italic;
+font-weight: normal;
+font-size: 14px;
+padding: 0 7px;
+line-height: 151.2%;
+color: #737373;
+}
+.more {
+   text-align: center;
+   
+}
+
+.more a {
+font-family: Nunito;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+padding: 14px 51.49px;
+text-align: center;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+.more a.xbutton {
+padding: 12px;
+background: #44CF6C;
+color: #fff;
+border-radius: 10px;
+border: none;
+}
     </style>
 </head>
 
@@ -649,9 +746,51 @@
             <div class="col-md-10 offset-md-1 pb-5 pt-5">
                 <img class="img-fluid" src="https://res.cloudinary.com/sgnolebagabriel/image/upload/v1570965739/startng/Group_424_eokznw.png">
             </div>
-            <div class="col-md-10 offset-md-1 pt-5 pb-5">
-                <img class="img-fluid" src="https://res.cloudinary.com/sgnolebagabriel/image/upload/v1570965845/startng/Testimonials_skqwbu.png">
+            <p class="subtop">What Students have to say about us</p>
+<div class="testimonials-container">
+    <p class="testimonial">
+            The HNG internship is a 3-month remote internship designed to find and develop the most talented software developers. 
+            Everyone is welcome to participate (there is no entrance exam). 
+            Anyone can log into the internship using their laptop. Each week, we give tasks. 
+    </p>
+    <br />
+    <div class="itemposition">
+        <img class="stuimg" src="https://res.cloudinary.com/cre8tcodes/image/upload/v1571178595/Ellipse1_kufvgh.png" alt="student" />
+        <div class="user-details">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            <p class="username">Dennis Lagbaja</p>
+            <p class="action">Completed the Front End Developer Class</p>
+        </div>
+    </div>
+</div>
+<div class="testimonials-container">
+        <p class="testimonial">
+            The HNG internship is a 3-month remote internship designed to find and develop the most talented software developers. 
+            Everyone is welcome to participate (there is no entrance exam). 
+            Anyone can log into the internship using their laptop. Each week, we give tasks. 
+        </p>
+        <br />
+        <div class="itemposition">
+            <img class="stuimg" src="https://res.cloudinary.com/cre8tcodes/image/upload/v1571178595/Ellipse2_we7s7n.png" alt="student" />
+            <div class="user-details">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                <p class="username">Khadirat Uche Jumbo</p>
+                <p class="action">Completed the Laravel PHP Class</p>
             </div>
+        </div>
+    </div>
+<br />
+    <div class="more">
+        <a class="xbutton" href="#">See More Reviews</a>
+    </div>
 
             <div class="container-fluid pt-5 pb-5" style="background-color: rgba(42, 43, 42, 0.05);">
                 <div class="container pt-5 pb-5">
