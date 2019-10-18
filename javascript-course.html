@@ -159,12 +159,7 @@
             float: right;
             color: #fff;
         }
-        /*.panel-default>.panel-heading+.panel-collapse>.panel-body {
-            /* border: solid 1px #EEEEEE; */
-        /* background: rgba(129, 22, 124, 0.05); 
-        }
-        */
-        
+       
         .course-acc {
             background: rgba(129, 22, 124, 0.05);
         }
@@ -172,7 +167,6 @@
             border: none;
             -webkit-box-shadow: none;
         }
-
         .exp-tt {
             font-size: 16px;
             padding-top: 60px;
@@ -265,11 +259,46 @@
             padding: 10px 20px;
             color: white;
         }
+        /* Duration Start Here */
+        .inline-element__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: .8rem;
+        }
+        .inline-element__top {
+            display: block;
+            font-family: Lato;
+            font-style: normal;
+            font-size: 12px;
+            font-weight: normal;
+        }
 
-        /* .head-3 {
-            padding: 10px 60px 10px 60px;
-            margin: 0;
-        } */
+        .inline-element__bottom {
+            display: block;
+            font-family: Lato;
+            font-style: normal;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+       .checked {
+            color: #ffce31;
+            width: 20px; 
+            height: 20px; 
+            margin: 0 5px;
+        }
+
+       span.inline-element--button a {
+          color: #44CF6C;
+          text-decoration: underline #44CF6C;
+       }
+
+       span.inline-element--button a:hover {
+         color: #228B22;
+       }
+        /* Duration Ends Here */
+
 
         /* testimonials Start Here */
         .testimonials-container {
@@ -428,45 +457,6 @@
             font-family:'Open Sans', sans-serif;
         }
         /* Start.ng end here */
-        /* Duration Start Here */
-        .inline-element__container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: .8rem;
-        }
-        .inline-element__top {
-            display: block;
-            font-family: Lato;
-            font-style: normal;
-            font-size: 12px;
-            font-weight: normal;
-        }
-
-        .inline-element__bottom {
-            display: block;
-            font-family: Lato;
-            font-style: normal;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-       .checked {
-            color: #ffce31;
-            width: 20px; 
-            height: 20px; 
-            margin: 0 5px;
-        }
-
-       span.inline-element--button a {
-          color: #44CF6C;
-          text-decoration: underline #44CF6C;
-       }
-
-       span.inline-element--button a:hover {
-         color: #228B22;
-       }
-        /* Duration Ends Here */
 
         /* Responsiveness */
         @media (max-width:991px) {
@@ -477,60 +467,6 @@
             }
         }
 
-        @media (max-width:767px) {
-            .projects-horizontal h2 {
-                margin-bottom:25px;
-                padding-top:25px;
-                font-size:25px;
-                font-family:Nunito, sans-serif;
-                color:#3a0842;
-            }
-
-            .sec .item1 .icon-div {
-                margin: 0 auto;
-            }
-        }
-        
-        @media screen and (min-width: 320px) and (max-width: 480px) {
-        .learn p {
-            list-style-type: none;
-            font-style: normal;
-            font-weight: bold;
-            margin: 20px 0;
-            padding-bottom: 10px;
-            font-size: 15px;
-            line-height: 20px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
-        }
-        
-        @media screen and (min-width: 320px) and (max-width: 480px) {
-            .float-right { margin-top: 6px;
-                           margin-bottom: 2px; }
-        }
-
-        @media screen and (min-width: 320px) and (max-width: 480px) {
-            .subbtn { margin-top: 15px; }
-        }
-        
-      @media screen and (min-width: 320px) and (max-width: 480px) {
-            .stuimg { position: absolute;
-                display:block;
-                max-width: 100%;
-                max-height: 100%;
-                /* left: 0
-                right: 0
-                    top: 0
-                    bottom: 0;
-                margin: auto; */
-            }
-
-            @media screen and (min-width: 320px) and (max-width: 480px) {
-            .user-details { padding-left: 75px;
-                             padding-bottom: 20px;
-                             margin-top: -10px;}  
-                
-            }
-      }
         /* Change effect */
         @media screen and (min-width: 320px) and (max-width: 480px) {
         html {
@@ -573,6 +509,57 @@
         }
 
         /* Change Effect End */
+
+        @media (max-width:767px) {
+            .projects-horizontal h2 {
+                margin-bottom:25px;
+                padding-top:25px;
+                font-size:25px;
+                font-family:Nunito, sans-serif;
+                color:#3a0842;
+            }
+
+            .sec .item1 .icon-div {
+                margin: 0 auto;
+            }
+        }
+        
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+        .learn p {
+            list-style-type: none;
+            font-style: normal;
+            font-weight: bold;
+            margin: 20px 0;
+            padding-bottom: 10px;
+            font-size: 15px;
+            line-height: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
+        }
+        
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+            .float-right { margin-top: 6px;
+                           margin-bottom: 2px; }
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+            .subbtn { margin-top: 15px; }
+        }
+        
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+            .stuimg { position: absolute;
+                display:block;
+                max-width: 100%;
+                max-height: 100%;
+                
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 480px) {
+            .user-details { padding-left: 75px;
+                             padding-bottom: 20px;
+                             margin-top: -10px;}  
+                
+            }
+      }
         /* Responsiveness End Here */
     </style>
 </head>
@@ -609,7 +596,6 @@
             </div>
         </div>
     </nav>
-<!--  -->
     <div class="container-fluid pt-5 pb-5" style="background-color: #F0F2F6;">
         <div class="container">
             <div class="row align-items-center">
@@ -618,17 +604,10 @@
                     <h4 class="font-weight-bold pb-3">Modern Javascript from Scratch</h4>
                     <p class="pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At at varius dolor pharetra
                         dolor semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-
+                        
                     <div class="clearfix">
                         <div class="float-left">
-                            <a class="btn btn-success pt-1 pb-1" href="register.html">Start
-                                Learning</a>
-                        </div>
-                        <div class="float-right">
-                            <a href="javascript-course.html" style="color: #000;">Beginner</a>
-                            <a class="btn btn-success pt-1 pb-1" style="background-color: #9A75A0; color:#4B0955; border-color: #9A75A0;">REMOTE</a>
-                            <a class="btn btn-success pt-1 pb-1" style="background-color: #FFE797; color:#E3B82A; border-color: #FFE797;">FREE</a>
-                            <!-- <a class="btn btn-success pt-1 pb-1" href="register.html"
+                            <a class="btn btn-success pt-1 pb-1" href="register.html"
                                 style="background-color:#44CF6C; color: #fff; border-color: #44CF6C;">Start
                                 Learning</a>
                         </div>
@@ -637,7 +616,7 @@
                             <a class="btn btn-success pt-1 pb-1"
                                 style="background-color: #9A75A0; color:#4B0955; border-color: #9A75A0;">REMOTE</a>
                             <a class="btn btn-success pt-1 pb-1"
-                                style="background-color: #FFE797; color:#E3B82A; border-color: #FFE797;">FREE</a> -->
+                                style="background-color: #FFE797; color:#E3B82A; border-color: #FFE797;">FREE</a>
                         </div>
                     </div>
                     <!--Start here -->
@@ -673,8 +652,7 @@
                 </div>
             </div>
         </div>
-    </div>
-
+  
     <div class="container pb-5 pt-5">
         <div class="head-2 text-center">
             <h2 class="text-center">What you will learn</h2>
@@ -715,7 +693,7 @@
             
             </div>
         </div>
-
+</div>
     </div>
     <div class="contaner-fluid bg-success ">
         <div class="row">
