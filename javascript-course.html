@@ -428,6 +428,45 @@
             font-family:'Open Sans', sans-serif;
         }
         /* Start.ng end here */
+        /* Duration Start Here */
+        .inline-element__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: .8rem;
+        }
+        .inline-element__top {
+            display: block;
+            font-family: Lato;
+            font-style: normal;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .inline-element__bottom {
+            display: block;
+            font-family: Lato;
+            font-style: normal;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+       .checked {
+            color: #ffce31;
+            width: 20px; 
+            height: 20px; 
+            margin: 0 5px;
+        }
+
+       span.inline-element--button a {
+          color: #44CF6C;
+          text-decoration: underline #44CF6C;
+       }
+
+       span.inline-element--button a:hover {
+         color: #228B22;
+       }
+        /* Duration Ends Here */
 
         /* Responsiveness */
         @media (max-width:991px) {
@@ -492,6 +531,48 @@
                 
             }
       }
+        /* Change effect */
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+        html {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            overflow-x: hidden;
+        }
+        
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+            .inline-element__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: .7rem;
+        }
+        .inline-element__top {
+            display: block;
+        }
+
+        .inline-element__bottom {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+       .checked {
+            color: #ffce31;
+        }
+
+       span.inline-element--button a {
+          color: #44CF6C;
+          text-decoration: underline #44CF6C;
+       }
+
+       span.inline-element--button a:hover {
+         color: #228B22;
+       }
+        }
+
+        /* Change Effect End */
         /* Responsiveness End Here */
     </style>
 </head>
@@ -559,8 +640,32 @@
                                 style="background-color: #FFE797; color:#E3B82A; border-color: #FFE797;">FREE</a> -->
                         </div>
                     </div>
-                    <img class="img-fluid mt-2"
-                        src="https://res.cloudinary.com/sgnolebagabriel/image/upload/v1570965296/startng/Group_422_gdcqn9.png">
+                    <!--Start here -->
+            <div class="inline-element__container">
+                        <div class="container-items mr-2">
+                            <p>
+                            <span class="inline-element__top">Duration</span>
+                            <span class="inline-element__bottom">12 Weeks</span>
+                            </p>
+                        </div>
+                        <div class="container-items mr-2">
+                            <p>
+                             <span class="inline-element__top">Courses starts</span>
+                            <span class="inline-element__bottom">5th of October, 2019</span>
+                        </p>
+                        </div>
+                        <div class="container-items mr-2">
+                               <span class="inline-element__top">Average ratings</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="inline-element--button"><a href="./javascript-course.html#reviews">See all reviews</a></span>
+                    
+                        </div>
+                    </div>
+                    <!--End here -->
                 </div>
                 <div class="col-md-6">
                     <img class="img-fluid"
@@ -568,7 +673,7 @@
                 </div>
             </div>
         </div>
-    </div>
+   
 
     <div class="container pb-5 pt-5">
         <div class="head-2 text-center">
