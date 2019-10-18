@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <title>Javascript</title>
+
     <style>
         html {
             width: 100%;
@@ -31,9 +33,9 @@
         }
 
         .btn-success:hover {
-            background-color: #2DCE89;
+            background-color: rgb(2, 20, 12);
             color: #fff;
-            border: thin solid #2dce89;
+            border: thin solid rgb(2, 20, 12);
         }
 
         .custom-toggler .navbar-toggler-icon {
@@ -157,7 +159,12 @@
             float: right;
             color: #fff;
         }
-       
+        /*.panel-default>.panel-heading+.panel-collapse>.panel-body {
+            /* border: solid 1px #EEEEEE; */
+        /* background: rgba(129, 22, 124, 0.05); 
+        }
+        */
+        
         .course-acc {
             background: rgba(129, 22, 124, 0.05);
         }
@@ -165,6 +172,7 @@
             border: none;
             -webkit-box-shadow: none;
         }
+
         .exp-tt {
             font-size: 16px;
             padding-top: 60px;
@@ -257,48 +265,11 @@
             padding: 10px 20px;
             color: white;
         }
-        /* Duration Start Here */
-        .inline-element__container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: .8rem;
-        }
-        .inline-element__top {
-            display: block;
-            font-family: Lato;
-            font-style: normal;
-            font-size: 12px;
-            font-weight: normal;
-        }
 
-        .inline-element__bottom {
-            display: block;
-            font-family: Lato;
-            font-style: normal;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .checked {
-            color: #ffce31;
-            width: 20px; 
-            height: 20px; 
-            margin: 0 5px;
-            padding: 5px;
-            font-size: 15px;
-        }
-
-       span.inline-element--button a {
-          color: #44CF6C;
-          text-decoration: underline #44CF6C;
-       }
-
-       span.inline-element--button a:hover {
-         color: #228B22;
-       }
-        /* Duration Ends Here */
-
+        /* .head-3 {
+            padding: 10px 60px 10px 60px;
+            margin: 0;
+        } */
 
         /* testimonials Start Here */
         .testimonials-container {
@@ -367,8 +338,12 @@
             color: #474747;
         }
 
-        
-        
+        .checked {
+            padding: 5px;
+            font-size: 15px;
+            color: #FAF35E;
+        }
+
         .action {
             margin: 0;
             font-family: Open Sans;
@@ -463,54 +438,6 @@
             }
         }
 
-        /* Change effect */
-        @media screen and (min-width: 320px) and (max-width: 480px) {
-        html {
-            width: 100%;
-            padding: 0px;
-            margin: 0px;
-            overflow-x: hidden;
-        }
-        
-        @media screen and (min-width: 320px) and (max-width: 480px) {
-            .inline-element__container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: .7rem;
-        }
-        .inline-element__top {
-            display: block;
-        }
-
-        .inline-element__bottom {
-            display: block;
-            font-size: 16px;
-            font-weight: bold;
-            font-style: normal;
-        }
-
-       .checked {
-            color: #ffce31;
-            width: 15px; 
-            height: 20px; 
-            margin: 0 5px;
-            padding: 5px;
-            font-size: 15px;
-        }
-
-       span.inline-element--button a {
-          color: #44CF6C;
-          text-decoration: underline #44CF6C;
-       }
-
-       span.inline-element--button a:hover {
-         color: #228B22;
-       }
-        }
-
-        /* Change Effect End */
-
         @media (max-width:767px) {
             .projects-horizontal h2 {
                 margin-bottom:25px;
@@ -551,7 +478,11 @@
                 display:block;
                 max-width: 100%;
                 max-height: 100%;
-                
+                /* left: 0
+                right: 0
+                    top: 0
+                    bottom: 0;
+                margin: auto; */
             }
 
             @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -562,6 +493,86 @@
             }
       }
         /* Responsiveness End Here */
+         /* Duration Start Here */
+         .element__c {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: .8rem;
+        }
+        .element__t {
+            display: block;
+            font-family: Lato;
+            font-style: normal;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .element__b {
+            display: block;
+            font-family: Lato;
+            font-style: normal;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .checked {
+            color: #ffce31;
+            width: 20px; 
+            height: 20px; 
+            margin: 0 5px;
+            padding: 5px;
+            font-size: 15px;
+        }
+
+       span.element--button a {
+          color: #44CF6C;
+          text-decoration: underline #44CF6C;
+       }
+
+       span.element--button a:hover {
+         color: #228B22;
+       }
+        /* Duration Ends Here */
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+            .element__c {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: .7rem;
+            
+        }
+        .element__t {
+            display: block;
+        }
+
+        .element__b {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+       .checked {
+            color: #ffce31;
+            width: 14px; 
+            height: 20px; 
+            margin: 0 5px;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+       span.element--button a {
+          color: #44CF6C;
+          text-decoration: underline #44CF6C;
+       }
+
+       span.element--button a:hover {
+         color: #228B22;
+       }
+        }
+
+        /* Change Effect End */
     </style>
 </head>
 
@@ -597,6 +608,7 @@
             </div>
         </div>
     </nav>
+<!--  -->
     <div class="container-fluid pt-5 pb-5" style="background-color: #F0F2F6;">
         <div class="container">
             <div class="row align-items-center">
@@ -605,10 +617,17 @@
                     <h4 class="font-weight-bold pb-3">Modern Javascript from Scratch</h4>
                     <p class="pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At at varius dolor pharetra
                         dolor semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        
+
                     <div class="clearfix">
                         <div class="float-left">
-                            <a class="btn btn-success pt-1 pb-1" href="register.html"
+                            <a class="btn btn-success pt-1 pb-1" href="register.html">Start
+                                Learning</a>
+                        </div>
+                        <div class="float-right">
+                            <a href="javascript-course.html" style="color: #000;">Beginner</a>
+                            <a class="btn btn-success pt-1 pb-1" style="background-color: #9A75A0; color:#4B0955; border-color: #9A75A0;">REMOTE</a>
+                            <a class="btn btn-success pt-1 pb-1" style="background-color: #FFE797; color:#E3B82A; border-color: #FFE797;">FREE</a>
+                            <!-- <a class="btn btn-success pt-1 pb-1" href="register.html"
                                 style="background-color:#44CF6C; color: #fff; border-color: #44CF6C;">Start
                                 Learning</a>
                         </div>
@@ -617,35 +636,37 @@
                             <a class="btn btn-success pt-1 pb-1"
                                 style="background-color: #9A75A0; color:#4B0955; border-color: #9A75A0;">REMOTE</a>
                             <a class="btn btn-success pt-1 pb-1"
-                                style="background-color: #FFE797; color:#E3B82A; border-color: #FFE797;">FREE</a>
+                                style="background-color: #FFE797; color:#E3B82A; border-color: #FFE797;">FREE</a> -->
                         </div>
                     </div>
                     <!--Start here -->
-            <div class="inline-element__container">
-                        <div class="container-items mr-2">
-                            <p>
-                            <span class="inline-element__top">Duration</span>
-                            <span class="inline-element__bottom">12 Weeks</span>
-                            </p>
-                        </div>
-                        <div class="container-items mr-2">
-                            <p>
-                             <span class="inline-element__top">Courses starts</span>
-                            <span class="inline-element__bottom">5th of October, 2019</span>
-                        </p>
-                        </div>
-                        <div class="container-items mr-2">
-                               <span class="inline-element__top">Average ratings</span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="inline-element--button"><a href="./javascript-course.html#reviews">See all reviews</a></span>
+            <div class="element__c">
+                <div class="container-items mr-2">
+                    <p>
+                    <span class="element__t">Duration</span>
+                    <span class="element__b">12 Weeks</span>
+                    </p>
+                </div>
+                <div class="container-items mr-2">
+                    <p>
+                     <span class="element__t">Courses starts</span>
+                    <span class="element__b">5th of October, 2019</span>
+                </p>
+                </div>
+                <div class="container-items mr-2">
                     
-                        </div>
-                    </div>
-                    <!--End here -->
+                       <span class="element__t">Average ratings</span>
+                    
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="element--button"><a href="./javascript-course.html#reviews">See all reviews</a></span>
+            
+                </div>
+            </div>
+            <!--End here -->
                 </div>
                 <div class="col-md-6">
                     <img class="img-fluid"
@@ -653,7 +674,8 @@
                 </div>
             </div>
         </div>
-  
+    </div>
+
     <div class="container pb-5 pt-5">
         <div class="head-2 text-center">
             <h2 class="text-center">What you will learn</h2>
@@ -694,7 +716,7 @@
             
             </div>
         </div>
-</div>
+
     </div>
     <div class="contaner-fluid bg-success ">
         <div class="row">
@@ -1283,7 +1305,7 @@
                 <div class="row pb-4">
                     <div class="col-lg-4 col-md-12 mb-3">
                         <h4 class='mb-4'>Ready to take the Leap?</h4>
-                        <a href="#" class='btn btn-success px-5 py-2 mb-5'>Start!</a>
+                        <a href="register.html" class='btn btn-success px-5 py-2 mb-5'>Start!</a>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 my-2">
                         <li><a href="about.html">About Us</a></li>
@@ -1304,7 +1326,7 @@
                     <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 my-2">
                         <li><a href="help.html">FAQ</a></li>
                         <li><a href="termsOfService.html">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
                     </div>
                 </div>
 
@@ -1329,5 +1351,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
-
 </html>
